@@ -1,0 +1,200 @@
+.messaging-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .messaging-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    background-color: #0088cc;
+    color: black;
+  }
+  
+  .messaging-header h1 {
+    font-size: 2rem;
+    margin: 0;
+  }
+  
+  .messaging-header .notification-icon {
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  .messages-list {
+    width: 100%;
+    overflow-y: scroll;
+    max-height: 60vh;
+    padding: 20px;
+    background-color: #f5f5f5;
+  }
+  
+  .message-item {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+  }
+  
+  .message-item .message-content {
+    padding: 10px;
+  }
+  
+  .message-item .message-sender {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .message-item .message-time {
+    font-size: 0.8rem;
+    color: #aaa;
+  }
+  
+  .message-form {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #f5f5f5;
+  }
+  
+  .message-form input[type="text"] {
+    width: 75%;
+    padding: 10px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .message-form button[type="submit"] {
+    width: 20%;
+    padding: 10px;
+    background-color: #0088cc;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .sent-message {
+    background-color: #e6f7ff;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    float: right;
+    clear: both;
+    }
+    
+    .received-message {
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    float: left;
+    clear: both;
+    }
+    
+    .message-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    }
+    
+    .message-header {
+    font-weight: bold;
+    margin-bottom: 5px;
+    }
+    
+    .message-time {
+    font-size: 12px;
+    color: gray;
+    }
+    
+    .notification-badge {
+    background-color: #ffc107;
+    color: black;
+    padding: 5px;
+    border-radius: 50%;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    }
+    
+    .messaging-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #f5f5f5;
+    border-bottom: 1px solid gray;
+    }
+    
+    .messaging-header h2 {
+    margin: 0;
+    padding-right: 10px;
+    }
+    
+    .messaging-header .icon {
+    font-size: 20px;
+    cursor: pointer;
+    color: red;
+    margin-left: 10px;
+    }
+    
+    .message-input {
+    padding: 10px;
+    background-color: #f5f5f5;
+    border-top: 1px solid gray;
+    }
+    
+    .message-input textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    resize: none;
+    }
+    
+    .message-input button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    }
+    
+    .message-input button:hover {
+    background-color: #3e8e41;
+    }
+    
+    .message-input input[type="text"] {
+    padding: 10px;
+    border: none;
+    margin-right: 10px;
+    }
+    
+    .message-input input[type="text"]:focus {
+    outline: none;
+    }
+    
+    .delete-message {
+    color: red;
+    cursor: pointer;
+    float: right;
+    }
+    
+    .delete-message:hover {
+    text-decoration: underline;
+    }
+    
+    .message-content {
+    padding: 10px;
+    }
+    
+    .message-content p {
+    margin: 0;
+    }

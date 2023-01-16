@@ -1,0 +1,157 @@
+.main{
+    padding: 20px;
+}
+
+.logo{
+    color: black;
+    font-weight: bold;
+}
+.role{
+    color: white;
+    font-size: 14px;
+    margin-top:-20px ;
+}
+.sidebar{
+    background-color: skyblue;
+    border-radius: 5px;
+    box-shadow: 0 0 2px gray;
+    margin-right: 20px;
+    min-height: 100%;
+    padding: 10px;
+}
+ .content{
+    width: 100%;
+    height: 100%;
+ }
+.header{
+    background-color: green;
+    border-radius: 5px;
+    box-shadow: 0 0 2px gray;
+    margin-bottom: 20px;
+    height: 10vh;
+    display: flex;
+    align-content: flex-end;
+    /* align-items: center; */
+    justify-content: space-between;
+}
+
+.body{
+    background-color: skyblue;
+    border-radius: 5px;
+    box-shadow: 0 0 2px gray;
+    height: 82vh;
+    width: 100%;
+    padding: 15px;
+    overflow-x: scroll !important;
+}
+
+
+.menu{
+    margin-top: 100px;
+    padding: 0 10px;
+}
+
+.menu-item{
+    margin-top: 30px;
+}
+
+.menu-item a{
+    color: rgba(255, 255, 255, 0.727);
+    text-decoration: none;
+    font-size: 18px;
+    padding: 0 10px;
+}
+.menu-item i{
+    color: rgba(255, 255, 255, 0.716);
+    text-decoration: none;
+    font-size: 18px;
+    margin:0 15px;
+}
+
+.active-menu-item{
+    color: white;
+    background-color: #013737;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.header-action-icon{
+    font-size: 30px;
+    color: black !important;
+    cursor: pointer;
+    padding-left: 10px;
+}
+
+.ant-scroll-number-only-unit{
+     padding-right: -10px !important;
+     padding-bottom: -10px !important;
+}
+
+@media screen and (max-width: 768px){
+  
+    .menu{
+        padding: 0 5px;
+    }
+    
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .box {
+    flex: 1;
+  }
+ 
+  @media (max-width: 600px) {
+    .box {
+      flex: 0 0 100%;
+    }
+  }
+
+
+  /* Form Styles */
+  form {
+    margin: 0 auto;
+    width: 300px;
+    padding: 20px;
+    border: 1px solid gray;
+    border-radius: 5px;
+  }
+  /* Label Styles */
+  label {
+    font-weight: bold;
+    color: black;
+    display: block;
+    margin-bottom: 10px;
+  }
+  /* Input Styles */
+  input[type="text"], input[type="password"] {
+    padding: 5px;
+    margin: 5px;
+    border-radius: 3px;
+    border: 1px solid gray;
+    width: 100%;
+  }
+  /* Submit Button Styles */
+  input[type="submit"] {
+    background-color: green;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  /* Register Link Styles */
+  a {
+    text-decoration: none;
+    color: blue;
+  }
+  /* Hover Styles */
+  input[type="text"]:hover, input[type="password"]:hover {
+    background-color: lightgray;
+  }
+  input[type="submit"]:hover
+
+
+
