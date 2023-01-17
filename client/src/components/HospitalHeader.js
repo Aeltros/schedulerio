@@ -92,7 +92,7 @@ const handleClick = (service) => {
             </a> */}
             <a href="/pharmacy">
               <FontAwesomeIcon icon={faPills} className="header-icon" />
-              Pharmacygit 
+              Pharmacy
             </a>
             <a href="/healthalerts">
               <FontAwesomeIcon icon={faBell} className="header-icon" />
