@@ -26,7 +26,7 @@ const HospitalFooter = () => {
 
          <a href={facebookLink}> <FacebookFilled size={30}/></a>
         <a href={twitterLink}> <TwitterCircleFilled size={30}/></a>
-        <a href={yelpLink}> <YelpFilled size={30}/></a>
+        <a href={yelpLink}> <TwitterCircleFilled size={30}/></a>
       </div>
       <div className="rating">
         <h4>Patient Rating:</h4>
