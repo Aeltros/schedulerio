@@ -4,9 +4,11 @@ import "../layout.css";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { Badge } from "antd";
-import MenuIcon from '@mui/icons-material/Menu';
-import CircleNotificationsIcon from '@mui/icons-material/CircleNotifications';
-import MailOutlineIcon from '@mui/icons-material/MailOutline';
+import { faBars } from '@fortawesome/free-solid-svg-icons'
+import { faBell } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 function Lab({ children }) {
   const [collapsed, setCollapsed] = useState(false);
   const { user } = useSelector((state) => state.user);
