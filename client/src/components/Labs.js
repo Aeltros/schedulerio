@@ -185,7 +185,7 @@ function Lab({ children }) {
                 navigate("/login");
               }}
             >
-              <WidgetsIcon className="ri-logout-circle-line"></WidgetsIcon>
+              <div className="ri-logout-circle-line"></div>
               {!collapsed && <Link to="/login">Logout</Link>}
             </div>
           </div>
