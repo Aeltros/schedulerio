@@ -3,7 +3,7 @@ import React from 'react';
 
 import { faFacebookSquare, faTwitterSquare, faYelp } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 
 const HospitalFooter = () => {
   const address = "1 Healthcare  St, San jose, CA 97621";
