@@ -1,5 +1,8 @@
 import React from 'react';
+
+
 import { faFacebookSquare, faTwitterSquare, faYelp } from '@fortawesome/free-brands-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const HospitalFooter = () => {
