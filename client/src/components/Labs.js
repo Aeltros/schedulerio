@@ -4,7 +4,7 @@ import "../layout.css";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { Badge } from "antd";
-import WidgetsIcon from '@mui/icons-material/Widgets';
+
 import LogoutIcon from '@mui/icons-material/Logout';
 import MenuIcon from '@mui/icons-material/Menu';
 import CircleNotificationsIcon from '@mui/icons-material/CircleNotifications';
