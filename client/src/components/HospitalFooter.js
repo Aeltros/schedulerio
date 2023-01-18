@@ -1,5 +1,8 @@
 import React from 'react';
-import { FaFacebookSquare, FaTwitterSquare, FaYelp } from 'react-icons/fa';
+
+import { FacebookFilled, TwitterCircleFilled, YelpFilled } from '@ant-design/icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 
 const HospitalFooter = () => {
   const address = "1 Healthcare  St, San jose, CA 97621";
@@ -19,9 +22,11 @@ const HospitalFooter = () => {
       </div>
       <div className="social-media">
         <h4>Follow us on:</h4>
-        <a href={facebookLink}> <FaFacebookSquare size={30}/></a>
-        <a href={twitterLink}> <FaTwitterSquare size={30}/></a>
-        <a href={yelpLink}> <FaYelp size={30}/></a>
+
+
+         <a href={facebookLink}> <FacebookFilled size={30}/></a>
+        <a href={twitterLink}> <TwitterCircleFilled size={30}/></a>
+        <a href={yelpLink}> <TwitterCircleFilled size={30}/></a>
       </div>
       <div className="rating">
         <h4>Patient Rating:</h4>
