@@ -68,11 +68,11 @@ function Appointments() {
     getAppointmentsData();
   }, []);
   return 
-   <LayoutServ>
+   <Layout>
   <h1 className="page-title">Appointments</h1>
   <hr />
   <Table columns={columns} dataSource={appointments} />
-</LayoutServ>
+</Layout>
 }
 
 export default Appointments;

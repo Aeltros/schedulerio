@@ -82,9 +82,9 @@ const handleClick = (service) => {
               <FontAwesomeIcon icon={faHeart} className="header-icon" />
               Labs
             </a>
-            <a href="/services">
+            <a href="/">
               <FontAwesomeIcon icon={faUserMd} className="header-icon" />
-              Services
+              Tele Medicine--Coming soon
             </a>
             {/* <a href="/specialists">
               <FontAwesomeIcon icon={faHospital} className="header-icon" />

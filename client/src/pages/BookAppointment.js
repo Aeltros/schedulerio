@@ -112,7 +112,7 @@ function BookAppointment() {
     getDoctorData();
   }, []);
   return (
-    <LayoutServ>
+    <Layout>
       {doctor && (
         <div>
           <h1 className="page-title">
@@ -186,7 +186,7 @@ function BookAppointment() {
           </Row>
         </div>
       )}
-    </LayoutServ>
+    </Layout>
   );
 }
 

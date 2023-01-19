@@ -5,10 +5,14 @@ import axios from "axios";
 import { Select } from "antd";
 import { useEffect, useState } from "react";
 import LayoutServ from "../components/LayoutServ";
-
-
+import { useDispatch, useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
+import toast from "react-hot-toast";
 
 function Messages() {//   // State to store all messages
+  const navigate = useNavigate();
+  const dispatch = useDispatch();
+    const {user} = useSelector((state) => state.user);
     const [messages, setMessages] = useState([]);
     // State to store the count of unseen notifications
     const [unseenNotifications, setUnseenNotifications] = useState(0);
@@ -27,40 +31,12 @@ function Messages() {//   // State to store all messages
         setMessages(response.data.messages);
         setUnseenNotifications(response.data.unseenNotifications);
       });
-  
-
-   
 
       // 
       axios.get("/api/get-all-doctors").then((response) => {
         setUsers(response.data);
       });
     }, []);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   
     // Handle change event for user selection
     const handleSelectChange = (value) => {

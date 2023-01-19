@@ -141,14 +141,23 @@ let time = (date.getHours() > 12 ? date.getHours() - 12 : date.getHours()) + ":"
       name: "Apply for Admission",
       path: "/apply-patient",
       icon: "ri-hospital-line",
-      key: 3,
+      key: 2,
     },
     {
       name: "Messages",
       path: "/messages",
       icon:<FontAwesomeIcon icon="envelope" size="lg" color="blue" /> ,
       key: 3,
-    }
+    },
+
+
+    {
+      name: "Appointments",
+      path: "/doctor/appointments",
+      icon: "ri-file-list-line",
+      key: 6,
+    },
+
   
   ];
 
@@ -157,33 +166,33 @@ let time = (date.getHours() > 12 ? date.getHours() - 12 : date.getHours()) + ":"
       name: "Home",
       path: "/",
       icon: "ri-home-line",
-      key: 1,
+      key: 4,
     },
      {
       name: "Profile",
       path: `/patient/profile/${user?._id}`,
       icon: "ri-hospital-line",
-      key: 2,
+      key: 5,
     },
     {
       name: "Appointments",
       path: "/doctor/appointments",
       icon: "ri-file-list-line",
-      key: 3,
+      key: 6,
     },
 
     {
       name: "Labs",
       path: "/labs",
       icon: "ri-file-list-line",
-      key: 4,
+      key: 7,
 
     },
     {
       name: "Pharmacy",
       path: "/Pharmacy",
       icon: "ri-gitlab-line",
-      key: 5,
+      key: 8,
     },
    
 
@@ -191,13 +200,13 @@ let time = (date.getHours() > 12 ? date.getHours() - 12 : date.getHours()) + ":"
       name: "TeleMed",
       path: "/patient/labs",
       icon: "ri-live-line",
-      key: 6,
+      key: 9,
     },
    {
       name: "Contact Us",
       path: "#",
       icon: <FontAwesomeIcon icon={faEnvelopeOpen } />,
-      key: 6,
+      key: 10,
     },
 
 
@@ -205,7 +214,7 @@ let time = (date.getHours() > 12 ? date.getHours() - 12 : date.getHours()) + ":"
       name: "Messages",
       path: "/messages",
       icon:<FontAwesomeIcon icon="envelope" size="lg" color="blue" /> ,
-      key: 3,
+      key: 11,
     }
     ,
   ];
@@ -216,7 +225,7 @@ let time = (date.getHours() > 12 ? date.getHours() - 12 : date.getHours()) + ":"
       name: "Home",
       path: "/",
       icon: "ri-home-line",
-      key: 1,
+      key: 12,
     },
     {
       name: "Appointments",
@@ -227,14 +236,14 @@ let time = (date.getHours() > 12 ? date.getHours() - 12 : date.getHours()) + ":"
       name: "PhysicianProfile",
       path: `/doctor/profile/${user?._id}`,
       icon: "ri-user-line",
-      key: 2,
+      key: 13,
     },
 
     {
       name: "Messages",
       path: "/messages",
       icon:<FontAwesomeIcon icon="envelope" size="lg" color="blue" /> ,
-      key: 3,
+      key: 14,
 
     }
     ,
@@ -248,30 +257,31 @@ let time = (date.getHours() > 12 ? date.getHours() - 12 : date.getHours()) + ":"
       name: "Home",
       path: "/",
       icon: "ri-home-line",
-      key: 1,
+      key: 16,
     },
     {
       name: "Users",
       path: "/admin/userslist",
       icon: "ri-user-line",
-      key: 2,
+      key: 17,
     },
     {
       name: "Doctors",
       path: "/admin/doctorslist",
       icon: "ri-user-star-line",
-      key: 3,
+      key: 18,
     },
     {
       name: "Patients",
       path: "/admin/patientslist",
       icon: "ri-user-star-line",
+      key: 18,
     },
     {
       name: "Profile",
       path: "/profile",
       icon: "ri-user-line",
-       key: 1,
+       key: 20,
     },
 
 
@@ -279,17 +289,18 @@ let time = (date.getHours() > 12 ? date.getHours() - 12 : date.getHours()) + ":"
       name: "Messages",
       path: "/messages",
       icon:<FontAwesomeIcon icon="envelope" size="lg" color="blue" /> ,
-      key: 3,
+      key: 21,
     }
     
     ,
   ];
 
 
-  const menuToBeRendered = user ? (user.isPatient ? patientMenu : user.isAdmin ? adminMenu : user.isDoctor ? doctorMenu : userMenu) : nonUserMenu;
+ 
 
-
-
+    const menuToBeRendered = user ? (user.isPatient ? patientMenu : user.isAdmin ? adminMenu : user.isDoctor ? doctorMenu : userMenu) : nonUserMenu;
+    const role = user ? (user.isAdmin ? "Admin" : user.isDoctor ? "Doctor" : user.isPatient ? "Dear Patient" : "User") : "Non-user";
+    const title = user ? (user.isDoctor ? "Dr." : "Mr/Ms.") : "";
 
 
 
@@ -299,6 +310,7 @@ let time = (date.getHours() > 12 ? date.getHours() - 12 : date.getHours()) + ":"
         <div className="sidebar">
           <div className="sidebar-header">
             <h3 className="logo">Schedular.io
+       
             <img  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLDkeifmFN8GfHe8f2MB_3ScCkUSi96M5eHg&usqp=CAU "  />
             </h3>
              {Greetings} 
