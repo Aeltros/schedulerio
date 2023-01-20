@@ -7,6 +7,7 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { faHome, faSignInAlt,  faLive,faWheelchair, faPersonHiking } from '@fortawesome/free-solid-svg-icons';
 import { Badge } from "antd";
+import BackgroundAnimation from "../pages/BackgroundAnimation";
 
 import HospitalHeader from "./HospitalHeader";
 
@@ -309,10 +310,14 @@ let time = (date.getHours() > 12 ? date.getHours() - 12 : date.getHours()) + ":"
       <div className="d-flex layout">
         <div className="sidebar">
           <div className="sidebar-header">
-            <h3 className="logo">Schedular.io
-       
-            <img  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLDkeifmFN8GfHe8f2MB_3ScCkUSi96M5eHg&usqp=CAU "  />
-            </h3>
+          <h5 className="logo">Ecorp Health Care</h5>
+<h5 style={{backgroundColor: 'black', position: 'relative'}}>
+        <BackgroundAnimation
+             style={{position: 'absolute', top:0, left: 0, width: '10px', height: '10px'}}
+        />
+        <p style={{color: 'red', position: 'absolute', top: '20px', left: '20px'}}>Hello</p>
+    </h5>
+
              {Greetings} 
 
 
